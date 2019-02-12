@@ -21,8 +21,8 @@ def generate_customers(output_location_root, number_of_customers, return_data=Tr
         csv_writer.writerow(["customer_id", "loyalty_score"])
         for cid in range(1, number_of_customers + 1):
             score = np.random.randint(low=1, high=11)
-            csv_writer.writerow([cid, score])
             customer_id = f"C{cid}"
+            csv_writer.writerow([customer_id, score])
             if return_data:
                 customers.append(Customer(customer_id, score))
     return customers if return_data else None
@@ -63,7 +63,7 @@ def generate_transactions(output_location_root, customers, products, product_id_
             transaction = {
                 "customer_id": customer.customer_id,
                 "basket": generate_basket(products, product_id_lookup, cats),
-                "date_of_purchase": str(day + timedelta(minutes=random.randint(168, 1440)))
+                "date_of_purchase": str(day + timedelta(minutes=random.randint(168, 1439)))
             }
             open_files[to_canonical_date_str(day)].write(json.dumps(transaction) + "\n")
 
