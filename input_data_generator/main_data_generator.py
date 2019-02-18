@@ -3,7 +3,7 @@ import numpy as np
 
 from datetime import datetime
 
-from input_data_generator.data_generator import generate_customers, generate_products, generate_transactions
+from data_generator import generate_customers, generate_products, generate_transactions
 
 if __name__ == "__main__":
     np.random.seed(seed=42)
