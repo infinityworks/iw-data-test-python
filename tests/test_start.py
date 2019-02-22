@@ -3,7 +3,7 @@ from datetime import datetime
 import pytest
 from pyspark import Row
 
-from solution_start import get_latest_transaction_date
+from solution.solution_start import get_latest_transaction_date
 
 
 @pytest.mark.usefixtures("spark")
