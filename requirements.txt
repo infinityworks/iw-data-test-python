@@ -1,0 +1,10 @@
+boto3
+pytest==3.6.2
+numpy==1.14.5
+pandas==0.23.1
+pytz==2018.5
+simplejson==3.16.0
+mockito==1.0.12
+scipy==1.1.0
+pyspark==2.4.0
+pyspark-stubs==2.4.0post1
