@@ -2,6 +2,7 @@ import os
 import numpy as np
 
 from datetime import datetime
+from dateutil.relativedelta import relativedelta
 
 from data_generator import generate_customers, generate_products, generate_transactions
 
@@ -31,7 +32,9 @@ if __name__ == "__main__":
     gen_customers = generate_customers(output_location, 137)
     product_id_lookup = generate_products(output_location, products_data)
 
-    start_date = datetime(2018, 12, 1, 0, 0, 0)
-    end_date = datetime(2019, 3, 1, 23, 59, 59)
+    end_date = datetime.today()
+    delta = relativedelta(months=3)
+    start_date = end_date - delta
+    
     generate_transactions(output_location, gen_customers, products_data, product_id_lookup, products_cats_frequency,
                           start_date, end_date)
