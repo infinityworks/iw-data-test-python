@@ -25,7 +25,7 @@ if __name__ == "__main__":
                               ["bws"] * 10
 
     gen_id = "starter"
-    output_location = f"../input_data/{gen_id}"
+    output_location = f"./input_data/{gen_id}"
     os.makedirs(output_location, exist_ok=True)
 
     gen_customers = generate_customers(output_location, 137)
