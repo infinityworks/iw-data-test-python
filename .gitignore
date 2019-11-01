@@ -103,6 +103,9 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+input_data/
+output_data/
+
 # IDEs and Editors
 .idea/
 .vscode/
