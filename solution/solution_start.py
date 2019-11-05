@@ -35,10 +35,10 @@ if __name__ == "__main__":
     )
 
     parser = argparse.ArgumentParser(description='DataTest')
-    parser.add_argument('--customers_location', required=False, default="../input_data/starter/customers.csv")
-    parser.add_argument('--products_location', required=False, default="../input_data/starter/products.csv")
-    parser.add_argument('--transactions_location', required=False, default="../input_data/starter/transactions/")
-    parser.add_argument('--output_location', required=False, default="../output_data/outputs/")
+    parser.add_argument('--customers_location', required=False, default="./input_data/starter/customers.csv")
+    parser.add_argument('--products_location', required=False, default="./input_data/starter/products.csv")
+    parser.add_argument('--transactions_location', required=False, default="./input_data/starter/transactions/")
+    parser.add_argument('--output_location', required=False, default="./output_data/outputs/")
     args = vars(parser.parse_args())
 
     run_transformations(spark_session, args['customers_location'], args['products_location'],
