@@ -12,6 +12,7 @@ click the `Accept License Agreement` radio button and download the version appro
 See installation instructions at: https://www.python.org/downloads/
 
 Check you have python3 installed:
+
 ```bash
 python3 --version
 ```
@@ -26,21 +27,19 @@ https://www.jetbrains.com/pycharm/download/
 #### Creating a virtual environment
 
 Ensure your pip (package manager) is up to date:
+
 ```bash
 pip3 install --upgrade pip
 ```
 
 To check your pip version run:
+
 ```bash
 pip3 --version
 ```
 
-Install virtualenv:
-```bash
-pip3 install virtualenv
-```
-
 Create the virtual environment in the root of the cloned project:
+
 ```bash
 python3 -m venv .venv
 ```
@@ -56,6 +55,7 @@ source ./.venv/bin/activate
 #### Installing Python requirements
 
 This will install some of the packages you might find useful:
+
 ```bash
 pip3 install -r ./requirements.txt
 ```
@@ -74,6 +74,7 @@ Although the technical test specification mentions 6 months of data, it's best t
 less than that initially to help improve the debugging process.
 
 To run the data generator use:
+
 ```bash
 python ./input_data_generator/main_data_generator.py
 ```
