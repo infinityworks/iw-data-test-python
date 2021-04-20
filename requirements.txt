@@ -11,7 +11,7 @@ numpy==1.17.3
 packaging==19.2
 pandas==0.25.3
 pluggy==0.13.0
-py==1.8.0
+py==1.10.0
 py4j==0.10.7
 pyparsing==2.4.2
 pyspark==2.4.4
