@@ -1,11 +1,17 @@
 # Infinity Works Data Test - Starter Project
 
 ## Prerequisites
-### Java JDK 8
+### Java JDK
 
-Go to https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-and under the section "Java SE Development Kit 8u191" (the final digits may vary at the time you're reading this)
-click the `Accept License Agreement` radio button and download the version appropriate to your operating system.
+PySpark requires Java 8 or later with `JAVA_HOME` properly set. This repo has been tested against Java 8 and Java 11.
+
+To download a Java JDK see:
+
+https://openjdk.java.net/install/
+
+or 
+
+https://www.oracle.com/java/technologies/downloads/
 
 ### Python 3.6.* or later.
 
